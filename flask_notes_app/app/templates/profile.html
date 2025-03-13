@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ user.username }}'s Profile</title>
+    <style>
+        .notes-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .note-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, {{ user.username }}!</h1>
+    <p>Email: {{ user.email if user.email else "No email provided" }}</p>
+
+    <!-- Add new note form -->
+    <div class="notes-section">
+        <h2>Add New Note</h2>
+        <form action="{{ url_for('main.add_note') }}" method="POST">
+            <label for="title">Title:</label>
+            <input type="text" name="title" required><br>
+            
+            <label for="content_md">Content:</label>
+            <textarea name="content_md" rows="4" required></textarea><br>
+
+            <label for="password">Password (for encryption, optional):</label>
+            <input type="password" name="password"><br>
+
+            <label for="is_public">Visibility:</label>
+            <select name="is_public">
+                <option value="false">Private</option>
+                <option value="true">Public</option>
+            </select><br>
+
+            <button type="submit">Add Note</button>
+        </form>
+        
+    </div>
+
+    <!-- Private Notes Section -->
+    <div class="notes-section">
+        <h2>Your Private Notes</h2>
+        {% if private_notes %}
+            <ul>
+                {% for note in private_notes %}
+                    <li class="note-item">
+                        <h3><a href="{{ url_for('main.view_note', note_id=note.id) }}">{{ note.title }}</a></h3>
+                        {% if note.encrypted %}
+                            <span>[Encrypted]</span>
+                        {% endif %}
+                        <form action="{{ url_for('main.toggle_visibility', note_id=note.id) }}" method="POST" style="display: inline;">
+                            <button type="submit">Make Public</button>
+                        </form>
+                        <form method="POST" action="{{ url_for('main.share_note', note_id=note.id) }}">
+                            <input type="text" name="username" placeholder="Enter username" required>
+                            <button type="submit">Share Note</button>
+                        </form>
+
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No private notes yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Public Notes Section -->
+    <div class="notes-section">
+        <h2>Your Public Notes</h2>
+        {% if public_notes %}
+            <ul>
+                {% for note in public_notes %}
+                    <li class="note-item">
+                        <h3><a href="{{ url_for('main.view_note', note_id=note.id) }}">{{ note.title }}</a></h3>
+                        {% if note.encrypted %}
+                            <span>[Encrypted]</span>
+                        {% endif %}
+                        <form action="{{ url_for('main.toggle_visibility', note_id=note.id) }}" method="POST" style="display: inline;">
+                            <button type="submit">Make Private</button>
+                        </form>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No public notes yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Shared With You Section -->
+    <div class="notes-section">
+        <h2>Notes Shared With You</h2>
+        {% if shared_notes %}
+            <ul>
+                {% for note in shared_notes %}
+                    <li class="note-item">
+                        <h3><a href="{{ url_for('main.view_note', note_id=note.id) }}">{{ note.title }}</a></h3>
+                        <p>Shared by: {{ note.author.username }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No notes have been shared with you.</p>
+        {% endif %}
+    </div>
+
+    <!-- Public Notes from Others Section -->
+    <div class="notes-section">
+        <h2>Public Notes from Others</h2>
+        {% if other_public_notes %}
+            <ul>
+                {% for note in other_public_notes %}
+                    <li class="note-item">
+                        <h3><a href="{{ url_for('main.view_note', note_id=note.id) }}">{{ note.title }}</a></h3>
+                        <p>Author: {{ note.author.username }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No public notes from other users available.</p>
+        {% endif %}
+    </div>
+
+    <a href="{{ url_for('main.logout') }}">Logout</a>
+</body>
+</html>

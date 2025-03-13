@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Authentication</title>
+</head>
+<body>
+    <h1>Two-Factor Authentication</h1>
+
+    {% if not current_user.is_2fa_verified %}
+        <div class="setup-instructions">
+            <p>To access your account, please:</p>
+            <ol>
+                <li>If you haven't already, install a 2FA app like Google Authenticator</li>
+                <li>Scan this QR code with your app:</li>
+            </ol>
+        </div>
+
+        <div class="qr-section">
+            <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code">
+             
+        </div>
+    {% endif %}
+
+    <div class="verification-form">
+        <p>Enter the 6-digit code from your authenticator app:</p>
+        <form method="POST" action="{{ url_for('main.verify_2fa') }}">
+            <label for="otp">Code:</label>
+            <input type="text" id="otp" name="otp" required pattern="[0-9]{6}" maxlength="6">
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

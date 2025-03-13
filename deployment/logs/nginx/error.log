@@ -1,0 +1,1138 @@
+2025/02/07 10:27:50 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:27:50 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:27:50 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:27:50 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:27:50 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:27:50 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:27:55 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:27:55 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:27:55 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:27:55 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:27:55 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:27:55 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:28:00 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:00 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:00 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:00 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:28:00 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:28:00 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:28:04 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:04 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:04 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:04 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:28:04 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:28:04 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:28:09 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:09 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:09 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:09 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:28:09 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:28:09 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:28:15 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:15 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:15 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:15 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:28:15 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:28:15 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:28:23 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:23 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:23 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:23 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:28:23 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:28:23 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:28:34 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:34 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:34 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:34 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:28:34 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:28:34 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:28:51 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:51 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:51 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:28:51 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:28:51 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:28:51 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:29:21 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:29:21 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:29:21 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:29:21 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:29:21 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:29:21 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:30:17 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:30:17 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:30:17 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:30:17 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:30:17 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:30:17 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:31:21 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:31:21 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:31:21 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:31:21 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:31:21 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:31:21 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:32:25 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:32:25 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:32:25 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:32:25 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:32:25 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:32:25 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:33:30 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:33:30 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:33:30 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:33:30 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:33:30 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:33:30 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:34:34 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:34:34 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:34:34 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:34:34 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:34:34 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:34:34 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:35:38 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:35:38 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:35:38 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:35:38 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:35:38 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:35:38 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:36:43 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:36:43 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:36:43 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:36:43 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:36:43 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:36:43 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:37:47 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:37:47 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:37:47 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:37:47 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:37:47 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:37:47 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:38:52 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:38:52 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:38:52 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:38:52 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:38:52 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:38:52 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:39:56 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:39:56 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:39:56 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:39:56 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:39:56 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:39:56 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:41:00 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:41:00 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:41:00 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:41:00 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:41:00 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:41:00 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:42:05 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:42:05 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:42:05 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:42:05 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:42:05 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:42:05 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:43:09 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:43:09 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:43:09 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:43:09 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:43:09 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:43:09 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:44:14 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:44:14 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:44:14 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:44:14 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:44:14 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:44:14 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:45:18 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:45:18 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:45:18 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:45:18 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:45:18 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:45:18 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:46:23 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:46:23 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:46:23 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:46:23 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:46:23 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:46:23 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:47:27 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:47:27 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:47:27 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:47:27 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:47:27 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:47:27 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:48:31 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:48:31 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:48:31 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:48:31 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:48:31 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:48:31 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:49:36 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:49:36 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:49:36 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:49:36 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:49:36 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:49:36 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:50:40 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:50:40 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:50:40 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:50:40 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:50:40 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:50:40 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:51:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:51:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:51:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:51:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:51:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:51:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:52:49 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:52:49 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:52:49 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:52:49 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:52:49 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:52:49 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:53:53 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:53:53 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:53:53 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:53:53 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:53:53 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:53:53 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:54:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:54:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:54:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:54:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:54:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:54:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:11 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:11 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:11 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:11 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:11 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:11 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:16 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:16 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:16 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:16 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:16 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:16 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:21 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:21 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:21 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:21 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:21 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:21 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:26 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:26 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:26 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:26 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:26 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:26 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:31 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:31 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:31 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:31 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:31 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:31 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:37 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:37 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:37 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:37 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:37 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:37 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:57:55 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:55 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:55 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:57:55 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:57:55 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:57:55 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:58:12 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:58:12 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:58:12 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:58:12 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:58:12 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:58:12 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:58:42 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:58:42 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:58:42 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:58:42 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:58:42 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:58:42 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/02/07 10:59:37 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:59:37 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:59:37 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/02/07 10:59:37 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/02/07 10:59:37 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/02/07 10:59:37 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:09:20 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:20 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:20 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:20 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:09:20 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:09:20 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:09:25 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:25 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:25 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:25 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:09:25 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:09:25 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:09:29 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:29 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:29 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:29 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:09:29 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:09:29 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:09:34 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:34 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:34 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:34 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:09:34 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:09:34 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:09:39 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:39 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:39 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:39 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:09:39 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:09:39 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:09:45 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:45 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:45 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:45 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:09:45 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:09:45 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:09:56 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:56 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:56 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:09:56 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:09:56 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:09:56 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:10:07 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:07 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:07 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:07 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:10:07 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:10:07 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:10:24 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:24 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:24 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:24 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:10:24 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:10:24 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:10:54 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:54 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:54 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:10:54 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:10:54 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:10:54 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:11:49 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:11:49 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:11:49 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:11:49 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:11:49 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:11:49 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:12:32 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:32 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:32 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:32 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:12:32 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:12:32 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:12:37 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:37 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:37 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:37 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:12:37 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:12:37 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:12:42 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:42 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:42 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:42 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:12:42 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:12:42 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:12:47 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:47 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:47 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:47 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:12:47 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:12:47 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:12:52 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:52 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:52 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:52 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:12:52 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:12:52 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:12:58 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:58 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:58 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:12:58 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:12:58 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:12:58 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:13:05 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:05 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:05 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:05 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:13:05 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:13:05 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:13:16 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:16 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:16 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:16 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:13:16 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:13:16 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:13:33 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:33 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:33 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:13:33 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:13:33 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:13:33 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:14:03 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:14:03 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:14:03 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:14:03 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:14:03 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:14:03 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:14:58 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:14:58 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:14:58 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:14:58 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:14:58 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:14:58 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:16:02 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:16:02 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:16:02 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:16:02 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:16:02 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:16:02 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:17:06 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:17:06 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:17:06 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:17:06 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:17:06 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:17:06 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:18:11 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:18:11 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:18:11 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:18:11 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:18:11 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:18:11 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:19:15 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:19:15 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:19:15 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:19:15 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:19:15 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:19:15 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:20:19 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:20:19 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:20:19 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:20:19 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:20:19 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:20:19 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:21:23 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:21:23 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:21:23 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:21:23 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:21:23 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:21:23 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:22:27 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:22:27 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:22:27 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:22:27 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:22:27 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:22:27 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:23:32 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:32 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:32 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:32 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:23:32 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:23:32 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:23:37 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:37 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:37 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:37 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:23:37 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:23:37 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:23:41 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:41 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:41 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:41 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:23:41 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:23:41 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:23:46 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:46 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:46 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:46 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:23:46 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:23:46 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:23:51 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:51 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:51 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:51 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:23:51 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:23:51 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:23:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:23:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:23:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:23:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:24:04 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:04 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:04 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:04 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:24:04 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:24:04 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:24:15 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:15 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:15 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:15 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:24:15 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:24:15 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:24:32 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:32 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:32 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:24:32 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:24:32 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:24:32 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:25:02 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:25:02 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:25:02 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:25:02 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:25:02 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:25:02 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:25:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:25:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:25:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:25:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:25:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:25:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:27:02 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:27:02 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:27:02 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:27:02 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:27:02 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:27:02 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:28:06 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:28:06 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:28:06 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:28:06 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:28:06 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:28:06 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:29:10 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:29:10 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:29:10 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:29:10 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:29:10 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:29:10 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:30:14 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:30:14 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:30:14 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:30:14 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:30:14 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:30:14 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:31:18 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:31:18 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:31:18 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:31:18 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:31:18 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:31:18 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:32:23 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:32:23 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:32:23 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:32:23 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:32:23 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:32:23 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:33:27 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:33:27 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:33:27 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:33:27 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:33:27 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:33:27 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:34:31 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:34:31 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:34:31 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:34:31 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:34:31 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:34:31 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:35:35 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:35:35 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:35:35 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:35:35 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:35:35 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:35:35 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:05 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:05 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:05 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:05 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:05 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:05 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:10 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:10 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:10 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:10 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:10 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:10 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:15 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:15 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:15 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:15 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:15 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:15 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:19 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:19 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:19 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:19 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:19 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:19 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:24 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:24 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:24 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:24 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:24 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:24 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:30 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:30 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:30 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:30 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:30 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:30 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:38 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:38 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:38 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:38 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:38 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:38 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:53:48 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:48 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:48 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:53:48 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:53:48 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:53:48 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:54:05 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:54:05 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:54:05 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:54:05 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:54:05 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:54:05 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:54:35 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:54:35 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:54:35 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:54:35 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:54:35 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:54:35 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:55:31 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:55:31 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:55:31 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:55:31 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:55:31 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:55:31 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:56:35 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:56:35 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:56:35 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:56:35 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:56:35 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:56:35 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:57:39 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:57:39 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:57:39 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:57:39 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:57:39 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:57:39 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:58:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:58:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:58:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:58:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:58:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:58:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 18:59:48 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:59:48 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:59:48 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 18:59:48 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 18:59:48 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 18:59:48 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:00:52 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:00:52 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:00:52 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:00:52 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:00:52 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:00:52 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:01:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:01:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:01:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:01:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:01:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:01:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:03:01 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:03:01 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:03:01 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:03:01 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:03:01 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:03:01 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:04:06 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:04:06 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:04:06 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:04:06 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:04:06 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:04:06 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:15 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:15 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:15 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:15 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:15 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:15 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:19 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:19 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:19 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:19 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:19 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:19 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:24 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:24 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:24 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:24 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:24 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:24 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:29 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:29 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:29 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:29 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:29 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:29 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:34 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:34 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:34 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:34 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:34 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:34 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:39 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:39 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:39 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:39 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:39 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:39 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:47 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:47 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:47 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:47 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:47 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:47 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:06:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:06:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:06:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:06:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:07:14 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:07:14 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:07:14 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:07:14 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:07:14 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:07:14 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:07:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:07:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:07:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:07:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:07:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:07:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:08:40 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:08:40 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:08:40 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:08:40 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:08:40 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:08:40 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:09:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:09:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:09:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:09:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:09:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:09:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:10:48 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:10:48 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:10:48 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:10:48 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:10:48 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:10:48 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:11:52 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:11:52 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:11:52 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:11:52 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:11:52 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:11:52 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:12:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:12:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:12:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:12:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:12:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:12:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:14:01 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:14:01 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:14:01 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:14:01 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:14:01 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:14:01 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:15:05 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:15:05 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:15:05 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:15:05 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:15:05 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:15:05 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:16:09 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:16:09 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:16:09 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:16:09 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:16:09 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:16:09 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:17:13 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:17:13 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:17:13 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:17:13 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:17:13 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:17:13 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:18:18 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:18:18 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:18:18 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:18:18 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:18:18 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:18:18 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:19:22 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:19:22 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:19:22 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:19:22 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:19:22 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:19:22 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:20:26 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:20:26 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:20:26 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:20:26 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:20:26 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:20:26 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:21:30 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:21:30 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:21:30 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:21:30 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:21:30 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:21:30 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:22:34 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:22:34 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:22:34 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:22:34 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:22:34 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:22:34 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:23:39 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:23:39 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:23:39 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:23:39 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:23:39 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:23:39 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:24:43 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:24:43 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:24:43 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:24:43 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:24:43 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:24:43 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:25:47 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:25:47 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:25:47 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:25:47 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:25:47 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:25:47 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:29:19 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:19 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:19 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:19 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:29:19 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:29:19 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:29:24 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:24 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:24 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:24 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:29:24 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:29:24 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:29:28 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:28 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:28 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:28 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:29:28 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:29:28 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:29:33 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:33 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:33 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:33 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:29:33 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:29:33 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:29:38 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:38 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:38 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:38 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:29:38 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:29:38 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:29:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:29:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:29:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:29:51 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:51 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:51 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:29:51 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:29:51 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:29:51 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:30:02 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:02 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:02 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:02 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:30:02 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:30:02 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:30:19 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:19 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:19 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:19 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:30:19 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:30:19 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:30:49 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:49 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:49 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:30:49 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:30:49 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:30:49 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:31:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:31:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:31:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:31:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:31:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:31:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:32:49 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:32:49 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:32:49 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:32:49 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:32:49 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:32:49 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:33:53 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:33:53 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:33:53 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:33:53 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:33:53 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:33:53 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/10 19:34:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:34:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:34:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/10 19:34:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/10 19:34:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/10 19:34:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:05:58 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:05:58 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:05:58 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:05:58 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:05:58 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:05:58 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:06:02 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:02 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:02 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:02 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:06:02 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:06:02 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:06:07 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:07 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:07 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:07 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:06:07 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:06:07 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:06:11 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:11 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:11 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:11 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:06:11 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:06:11 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:06:16 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:16 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:16 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:16 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:06:16 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:06:16 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:06:22 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:22 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:22 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:22 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:06:22 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:06:22 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:06:29 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:29 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:29 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:29 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:06:29 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:06:29 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:06:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:06:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:06:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:06:44 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:07:01 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:07:01 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:07:01 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:07:01 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:07:01 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:07:01 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:07:31 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:07:31 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:07:31 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:07:31 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:07:31 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:07:31 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:08:24 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:24 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:24 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:24 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:08:24 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:08:24 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:08:29 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:29 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:29 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:29 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:08:29 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:08:29 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:08:33 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:33 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:33 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:33 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:08:33 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:08:33 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:08:37 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:37 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:37 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:37 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:08:37 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:08:37 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:08:42 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:42 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:42 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:42 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:08:42 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:08:42 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:08:52 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:52 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:52 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:08:52 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:08:52 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:08:52 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:09:00 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:00 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:00 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:00 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:09:00 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:09:00 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:09:10 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:10 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:10 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:10 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:09:10 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:09:10 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:09:27 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:27 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:27 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:27 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:09:27 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:09:27 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:09:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:09:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:09:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:09:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:10:52 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:10:52 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:10:52 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:10:52 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:10:52 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:10:52 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:11:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:11:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:11:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:11:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:11:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:11:57 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:13:06 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:13:06 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:13:06 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:13:06 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:13:06 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:13:06 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:14:14 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:14:14 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:14:14 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:14:14 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:14:14 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:14:14 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:15:18 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:15:18 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:15:18 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:15:18 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:15:18 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:15:18 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:16:23 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:16:23 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:16:23 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:16:23 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:16:23 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:16:23 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:17:27 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:17:27 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:17:27 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:17:27 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:17:27 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:17:27 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:18:31 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:18:31 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:18:31 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:18:31 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:18:31 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:18:31 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:19:35 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:19:35 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:19:35 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:19:35 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:19:35 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 16:19:35 [emerg] 1#1: host not found in upstream "backend:5000" in /etc/nginx/nginx.conf:45
+2025/03/13 16:23:12 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:23:12 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:23:12 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 16:23:12 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 16:23:12 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 17:07:48 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:07:48 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:07:48 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:07:48 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 17:07:48 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 17:14:36 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:14:36 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:14:36 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:14:36 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 17:14:36 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 17:21:12 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:21:12 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:21:12 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:21:12 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 17:21:12 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 17:50:53 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:50:53 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:50:53 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:50:53 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 17:50:53 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 17:52:33 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:52:33 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:52:33 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:52:33 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 17:52:33 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 17:55:01 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:55:01 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:55:01 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 17:55:01 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 17:55:01 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12
+2025/03/13 18:00:32 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 18:00:32 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 18:00:32 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:10
+2025/03/13 18:00:32 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:11
+2025/03/13 18:00:32 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:12

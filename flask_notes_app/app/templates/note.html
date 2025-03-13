@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ note.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% if note.encrypted %}
+        <h1>{{ note.title }}</h1>
+        {% if content %}
+            <div class="note">
+                {{ content | safe }} <!-- Display decrypted content -->
+            </div>
+        {% else %}
+            <form method="POST">
+                <label for="password">Enter password to decrypt:</label>
+                <input type="password" name="password" required>
+                <button type="submit">Submit</button>
+            </form>
+            {% if not content %}
+                <p style="color: red;">Incorrect password. Please try again.</p>  <!-- Error message if wrong password -->
+            {% endif %}
+        {% endif %}
+    {% else %}
+        <h1>{{ note.title }}</h1>
+        <div class="note">
+            {{ note.content_html | safe }}  <!-- Display the normal, unencrypted content -->
+        </div>
+    {% endif %}
+    
+    <a href="{{ url_for('main.profile') }}">Powrót do profilu</a> <!-- Link to return to the note list -->
+</body>
+</html>

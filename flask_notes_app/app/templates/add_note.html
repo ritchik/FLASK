@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj notatkę</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Dodaj nową notatkę</h1>
+    <form method="POST">
+        <label for="title">Title:</label>
+        <input type="text" name="title" required>
+    
+        <label for="content">Content (Markdown):</label>
+        <textarea name="content" rows="5" required></textarea>
+    
+        <label for="password">Password (optional, for encrypted notes):</label>
+        <input type="password" name="password">
+    
+        <button type="submit">Add Note</button>
+    </form>
+    <a href="{{ url_for('list_notes') }}">Powrót do listy</a>
+</body>
+</html>
