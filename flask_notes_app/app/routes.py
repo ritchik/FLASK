@@ -1,12 +1,29 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, session 
-from app.models import Note, User, SharedNote
+from app.models import Note, User, SharedNote,LoginHistory
+from flask_mail import Message,Mail
+from flask import current_app
+from app import mail,csrf, limiter
+from app.forms import ForgotPasswordForm, ResetPasswordForm, LoginForm,Verify2FAForm,AddNoteForm
+#from . import app
+#from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from itsdangerous import URLSafeTimedSerializer, BadSignature, SignatureExpired
 from app import db
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.security import check_password_hash, generate_password_hash
 import hashlib 
 import pyotp
 from flask import jsonify
+from flask_wtf.csrf import CSRFProtect, generate_csrf
 
+from flask import render_template, request, flash, redirect, url_for, session
+from flask_login import login_user, logout_user, login_required, current_user
+import time
+from flask import abort 
+from flask import current_app as app 
+ 
+import uuid
+import geoip2.database
+from app.email import send_email 
 import markdown
 import pyqrcode
 from io import BytesIO
@@ -15,9 +32,75 @@ import re
 import os
 from werkzeug.utils import secure_filename  
 from app.PasswordManager import LoginAttemptTracker, PasswordManager
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+
+main = Blueprint('main', __name__)
 
 
-main = Blueprint('main', __name__)\
+def generate_session_id():
+    """Generate unique session identifier"""
+    return str(uuid.uuid4())
+
+def get_location(ip_address):
+    """Get approximate location from IP address"""
+    try:
+        with geoip2.database.Reader('GeoLite2-City.mmdb') as reader:
+            response = reader.city(ip_address)
+            return f"{response.city.name}, {response.country.name}"
+    except:
+        return "Unknown"
+
+def detect_suspicious_login(user_id, request):
+    """Check for unusual login patterns"""
+    from app.models import LoginHistory  # Avoid circular imports
+    
+    # Get last 5 logins
+    last_logins = LoginHistory.query.filter_by(user_id=user_id)\
+                      .order_by(LoginHistory.login_time.desc())\
+                      .limit(5)\
+                      .all()
+    
+    if not last_logins:
+        return False
+    
+    current_ip = request.remote_addr
+    current_agent = request.headers.get('User-Agent')
+    
+    # Check if IP or device changed
+    for login in last_logins:
+        if login.ip_address != current_ip or login.user_agent != current_agent:
+            return True
+    
+    return False
+
+def send_security_alert(user):
+    """Send email notification about suspicious login"""
+    subject = "Security Alert: New Login Detected"
+    template = "email/security_alert.html"
+    send_email(user.email, subject, template, user=user)
+
+
+
+
+def check_honeypot(request):
+    """Check honeypot field in form submissions"""
+    if request.method == "POST":
+        honeypot = request.form.get("honeypot")
+        if honeypot and honeypot.strip():
+            current_app.logger.warning(
+                f"Honeypot triggered - Bot detected from {request.remote_addr} | "
+                f"User-Agent: {request.headers.get('User-Agent')} | "
+                f"Attempted username: {request.form.get('username', '')}"
+            )
+            abort(403, description="Invalid form submission")
+
+
+
+
+@main.context_processor
+def inject_csrf_token():
+    return dict(csrf_token=generate_csrf())
 
 def generate_signature(user_id, content):
     data = f"{user_id}:{content}"
@@ -27,55 +110,141 @@ def verify_signature(note):
     expected_signature = generate_signature(note.user_id, note.content_md)
     return expected_signature == note.signature
 
+def check_honeypot(request):
+    """Check honeypot field in form submissions"""
+    if request.method == "POST":
+        honeypot = request.form.get("honeypot")
+        if honeypot and honeypot.strip() != "":
+            app.logger.warning(f"Bot detected via honeypot from {request.remote_addr}")
+            abort(403)
 
-@main.route("/")  
+
+def test_honeypot_protection(self):
+    # Test valid submission
+    response = self.client.post('/login', data={
+        'username': 'testuser',
+        'password': 'testpass',
+        'honeypot': '',  # Empty honeypot
+        'csrf_token': generate_csrf()
+    })
+    self.assertNotEqual(response.status_code, 403)
+    
+    # Test bot submission
+    response = self.client.post('/login', data={
+        'username': 'botuser',
+        'password': 'botpass',
+        'honeypot': 'filled',  # Honeypot filled
+        'csrf_token': generate_csrf()
+    })
+    self.assertEqual(response.status_code, 403)            
+
+@main.route("/") 
+def index():
+    return redirect(url_for('main.login'))
+
+ 
+
 @main.route("/login", methods=['GET', 'POST'])
+@limiter.limit("15 per minute", key_func=lambda: f"login_global_{request.remote_addr}")  # Global IP-based limit
+@limiter.limit("5 per minute", key_func=lambda: f"login_user_{session.get('_id', 'anon')}")  # Per-session limit
 def login():
+    check_honeypot(request)
+    
+    # Progressive security measures
     if current_user.is_authenticated:
         return redirect(url_for('main.profile'))
+    
+    form = LoginForm()
+    
+    # Initialize security tracking
+    if 'failed_attempts' not in session:
+        session['failed_attempts'] = 0
+        session['_id'] = str(uuid.uuid4())  # Unique session identifier
+        session['first_failed_time'] = None
+    
+    # Progressive lockout system (5, 10, 15+ fails)
+    lockout_durations = {5: 30, 10: 300, 15: 1800}  # 30s, 5m, 30m
+    current_lockout = next((v for k,v in sorted(lockout_durations.items()) 
+                          if session['failed_attempts'] >= k), 0)
+    
+    # Check if in lockout period
+    if current_lockout > 0:
+        elapsed = time.time() - session.get('lock_time', 0)
+        remaining = max(0, current_lockout - elapsed)
+        if remaining > 0:
+            flash(f'Too many failed attempts. Please try again in {int(remaining)} seconds', 'danger')
+            return render_template('login.html', 
+                                form=form,
+                                is_locked=True,
+                                remaining_time=int(remaining))
+        else:
+            # Lockout period expired
+            session['failed_attempts'] = 0
 
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        
-        # Kontrola liczby prób logowania
-        if not LoginAttemptTracker.is_login_allowed(username):
-            flash('Zbyt wiele nieudanych prób. Spróbuj ponownie później.', 'danger')
-            return redirect(url_for('main.login'))
-        
-        user = User.query.filter_by(username=username).first()
+    # Add progressive delay for failed attempts (1s per failed attempt, max 5s)
+    if session['failed_attempts'] > 0:
+        delay = min(session['failed_attempts'], 5)
+        time.sleep(delay)
+
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=form.username.data).first()
         
         if user:
-            # Weryfikacja hasła z wielowarstwowym mechanizmem bezpieczeństwa
-            if PasswordManager.verify_password(user.password_hash, password):
-                # Reset licznika nieudanych prób
-                LoginAttemptTracker.reset_login_attempts(username)
-                
-                # Resetowanie 2FA
-                user.is_2fa_verified = False
-                db.session.commit()
-
+            if PasswordManager.verify_password(user.password_hash, form.password.data):
+                # Successful login
+                session.pop('failed_attempts', None)
+                session.pop('lock_time', None)
                 login_user(user)
                 
-                # Redirect to 2FA if required
-                if user.totp_secret:
-                    return redirect(url_for('main.verify_2fa'))
+                # Log login history
+                try:
+                    login_history = LoginHistory(
+                        user_id=user.id,
+                        ip_address=request.remote_addr,
+                        user_agent=request.headers.get('User-Agent'),
+                        location=get_location(request.remote_addr)  # Implement this
+                    )
+                    db.session.add(login_history)
+                    db.session.commit()
+                    
+                    # Check for suspicious login
+                    if detect_suspicious_login(user.id, request):  # Implement this
+                        send_security_alert(user)  # Implement this
+                        flash('Security alert: Unusual login detected', 'warning')
                 
+                except Exception as e:
+                    current_app.logger.error(f"Login history error: {str(e)}")
+                
+                flash('Login successful!', 'success')
                 return redirect(url_for('main.profile'))
             else:
-                # Rejestracja nieudanej próby logowania
-                LoginAttemptTracker.record_failed_attempt(username)
+                # Failed attempt
+                session['failed_attempts'] = session.get('failed_attempts', 0) + 1
+                if session['failed_attempts'] == 1:
+                    session['first_failed_time'] = time.time()
                 
-        # Ogólny, nieprecyzyjny komunikat o błędzie
-        flash('Nieprawidłowe dane logowania', 'danger')
-    
-    return render_template('login.html')
+                # Check if we should lock
+                if session['failed_attempts'] in lockout_durations:
+                    session['lock_time'] = time.time()
+                    current_lockout = lockout_durations[session['failed_attempts']]
+                    flash(f'Account temporarily locked for {current_lockout} seconds', 'danger')
+                
+                flash('Invalid credentials', 'danger')
+        else:
+            # Unknown username
+            session['failed_attempts'] = session.get('failed_attempts', 0) + 1
+            flash('Invalid credentials', 'danger')
 
-
-
+    return render_template('login.html', 
+                         form=form, 
+                         is_locked=False,
+                         remaining_time=0)
+ 
 @main.route('/profile')
 @login_required
 def profile():
+   # check_honeypot(request)
+
     if not current_user.is_2fa_verified:
         return redirect(url_for('main.verify_2fa'))
     
@@ -116,9 +285,13 @@ def profile():
         other_users=other_users
     )
 
+ 
 @main.route('/logout')
 @login_required
 def logout():
+   
+    
+
     # Reset 2FA verification status and logout user
     current_user.is_2fa_verified = False  # Reset 2FA verification on logout
     db.session.commit()
@@ -137,32 +310,39 @@ def logout():
     flash("You have been logged out.", "info")
     return redirect(url_for('main.login'))
 
-
+ 
 # @main.route("/")   
 @main.route("/notes")
 @login_required
 def list_notes():
+
+   
     notes = Note.query.filter_by(user_id=current_user.id).all()
-    # Convert markdown to HTML for each note
     for note in notes:
-        if note.content_md:  # Ensure there is content
-            note.content_html = markdown.markdown(note.content_md)  # Convert markdown to HTML
+        if note.content_md:
+            note.content_html = markdown.markdown(note.content_md)
         else:
             note.content_html = ""
+        note.signature_valid = note.verify_signature(current_user)  # Check if signature is valid
     return render_template("notes.html", notes=notes)
 
 
-
+ 
 @main.route('/note/<int:note_id>', methods=['GET', 'POST'])
 @login_required
 def view_note(note_id):
+
+     
+   
+
     note = Note.query.get_or_404(note_id)
 
-    # Sprawdzenie dostępu
+    # Check if the user has access to the note
     if not note.is_accessible_by(current_user):
         flash("Nie masz dostępu do tej notatki!", "danger")
         return redirect(url_for("main.list_notes"))
 
+    # Decrypt note if it's encrypted
     if note.encrypted:
         if request.method == "POST":
             password = request.form["password"]
@@ -170,6 +350,7 @@ def view_note(note_id):
 
             if decrypted_content:
                 content_html = markdown.markdown(decrypted_content)
+                note.signature_valid = note.verify_signature(current_user)  # Verify signature after decryption
                 return render_template("note.html", note=note, content=content_html)
             else:
                 flash("Błędne hasło.", "danger")
@@ -177,12 +358,43 @@ def view_note(note_id):
         return render_template("note.html", note=note)
 
     note.content_html = markdown.markdown(note.content_md)
+    note.signature_valid = note.verify_signature(current_user)  # Verify signature
     return render_template("note.html", note=note, content=note.content_html)
 
+
+     
+ 
+@main.route("/sign_note/<int:note_id>", methods=["POST"])
+@login_required
+def sign_note_route(note_id):
+
+ 
+
+    note = Note.query.get_or_404(note_id)
+
+    # Check if the note belongs to the current user
+    if note.user_id != current_user.id:
+        flash("Nie masz uprawnień do podpisania tej notatki.", "danger")
+        return redirect(url_for("main.list_notes"))
+
+    try:
+        # Sign the note
+        note.sign_note(current_user)
+        db.session.commit()
+        flash("Notatka została podpisana.", "success")
+    except ValueError:
+        flash("Brak klucza prywatnego. Możesz wygenerować go w swoim profilu.", "danger")
+
+    return redirect(url_for("main.view_note", note_id=note.id))
+
+ 
 
 @main.route("/delete/<int:note_id>", methods=["POST"])
 @login_required
 def delete_note(note_id):
+
+  
+
     note = Note.query.get_or_404(note_id)
     if note.user_id != current_user.id:
         flash('You do not have permission to delete this note.')
@@ -191,9 +403,19 @@ def delete_note(note_id):
     db.session.commit()
     return redirect(url_for("main.list_notes"))
 
+
+
 @main.route('/register', methods=['GET', 'POST'])
 def register():
+    check_honeypot(request)
+
+     
+
     if request.method == 'POST':
+
+        
+        print(f"CSRF token in form: {request.form.get('csrf_token')}")
+
         username = request.form['username']
         password = request.form['password']
         confirm_password = request.form['confirm_password']
@@ -256,6 +478,9 @@ def register():
             totp_secret=totp_secret
         )
 
+         # Generowanie kluczy RSA podczas rejestracji
+        user.generate_keys()
+
         try:
             db.session.add(user)
             print('after adding')
@@ -271,46 +496,83 @@ def register():
 
     return render_template('register.html')
 
-
+  
+  
 @main.route("/add", methods=["GET", "POST"])
 @login_required
 def add_note():
+
+ 
     if request.method == "POST":
-        title = request.form["title"]
-        content_md = request.form["content_md"]
-        password = request.form.get('password')
-        is_public = request.form.get('is_public') == 'true'  # New field for public/private
-        
-        signature = generate_signature(current_user.id, content_md)
+        try:
+            # Get data directly from request.form (no Flask-WTF form)
+            title = request.form.get("title")
+            content = request.form.get("content")
+            is_public = request.form.get("is_public") == "on"  # Checkbox handling
+            password = request.form.get("password")
 
-        new_note = Note(
-            title=title, 
-            content_md=content_md, 
-            user_id=current_user.id,
-            signature=signature,
-            is_public=is_public  # Set the public status
-        )
+            new_note = Note(
+                title=title,
+                content_md=content,
+                user_id=current_user.id,
+                is_public=is_public
+            )
 
-        if password:
-            new_note.encrypt_content(password)
-        
-        db.session.add(new_note)
+            if password:
+                new_note.encrypt_content(password)
+
+            db.session.add(new_note)
+            
+            if not current_user.private_key:
+                current_user.generate_keys()
+                db.session.commit()
+                flash('Wygenerowano nowe klucze bezpieczeństwa.', 'info')
+            
+            new_note.sign_note(current_user)
+            db.session.commit()
+            
+            flash('Notatka dodana i podpisana pomyślnie!', 'success')
+            return redirect(url_for('main.profile'))
+            
+        except Exception as e:
+            db.session.rollback()
+            flash(f'Błąd podczas dodawania notatki: {str(e)}', 'danger')
+
+    return render_template("add_note.html")  # No form object passed
+
+
+ 
+
+@main.route('/regenerate_keys', methods=['POST'])
+@login_required
+def regenerate_keys():
+    
+ 
+
+    try:
+        current_user.generate_keys()
         db.session.commit()
-        
-        flash('Note added successfully!', 'success')
-        return redirect(url_for('main.profile'))
-
-    return render_template("add_note.html")
+        flash('Klucze bezpieczeństwa zostały zregenerowane pomyślnie', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Błąd podczas regeneracji kluczy: {str(e)}', 'danger')
+    
+    return redirect(url_for('main.profile'))
 
 
 @main.route('/verify_2fa', methods=['GET', 'POST'])
 @login_required  # Ensure only logged-in users can access
 def verify_2fa():
+    form = Verify2FAForm()  # Use the new form
+
+
     if request.method == 'POST':
         otp = request.form.get('otp')
         if not otp:
             flash("Please enter the OTP code.", "error")
             return redirect(url_for('main.verify_2fa'))
+        if form.validate_on_submit():
+           otp = form.otp.data
 
         totp = pyotp.TOTP(current_user.totp_secret)
         
@@ -335,7 +597,8 @@ def verify_2fa():
     qr.png(buffer, scale=6)
     qr_code_base64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
             
-    return render_template('verify_2fa.html', 
+    return render_template('verify_2fa.html',
+                           form=form, 
                          qr_code=qr_code_base64, 
                          secret=current_user.totp_secret)
 
@@ -349,9 +612,11 @@ def save_image(image):
     return image_path
 
 
+
 @main.route("/addimage", methods=["GET", "POST"])
 @login_required
 def add_image():
+ 
     if request.method == "POST":
         title = request.form["title"]
         content_md = request.form["content_md"]
@@ -386,10 +651,11 @@ def add_image():
     return render_template("add_note.html")
 
  
-
+ 
 @main.route('/toggle_visibility/<int:note_id>', methods=['POST'])
 @login_required
 def toggle_visibility(note_id):
+     
     note = Note.query.get_or_404(note_id)
     
     if note.user_id != current_user.id:
@@ -404,9 +670,11 @@ def toggle_visibility(note_id):
     return redirect(url_for('main.profile'))
 
 
+
 @main.route('/share/<int:note_id>', methods=['POST'])
 @login_required
 def share_note(note_id):
+     
     note = Note.query.get_or_404(note_id)
 
     if note.user_id != current_user.id:
@@ -430,6 +698,87 @@ def share_note(note_id):
         flash("Note shared successfully!", "success")
 
     return redirect(url_for('main.list_notes'))
+
+
+@main.route('/forgot-password', methods=['GET', 'POST'])
+def forgot_password():
+    form = ForgotPasswordForm()  # Create a form class
+    
+    if form.validate_on_submit():
+        email = form.email.data
+        user = User.query.filter_by(email=email).first()
+        
+        if user:
+            serializer = URLSafeTimedSerializer(current_app.config['SECRET_KEY'])
+            token = serializer.dumps({'user_id': user.id}, salt='password-reset')
+            
+            reset_url = url_for('main.reset_password', token=token, _external=True)
+            
+            # Send email
+            msg = Message('Password Reset Request',
+                         sender='noreply@yourdomain.com',
+                         recipients=[email])
+            msg.body = f'Click to reset your password: {reset_url}'
+            mail.send(msg)
+            
+            flash('Password reset link sent to your email.', 'info')
+            return redirect(url_for('main.login'))
+        
+        flash('No account found with that email.', 'danger')
+    
+    return render_template('forgot_password.html', form=form)
+
+@main.route('/reset-password/<token>', methods=['GET', 'POST'])
+def reset_password(token):
+    try:
+        serializer = URLSafeTimedSerializer(current_app.config['SECRET_KEY'])
+        data = serializer.loads(token, salt='password-reset', max_age=3600)
+        user = User.query.get(data['user_id'])
+        
+        if not user:
+            flash('Invalid user', 'danger')
+            return redirect(url_for('main.login'))
+
+        form = ResetPasswordForm()
+        
+        if form.validate_on_submit():
+            # DEBUG: Print new password before hashing
+            print(f"New password received: {form.password.data}")
+            
+            # Use your existing PasswordManager to hash
+            hashed_password = PasswordManager.hash_password(form.password.data)
+            print(f"Hashed password: {hashed_password}")
+            
+            # Update user password
+            user.password_hash = hashed_password
+            db.session.commit()
+            
+            # Verify the update
+            updated_user = User.query.get(user.id)
+            print(f"Stored hash after update: {updated_user.password_hash}")
+            
+            flash('Password updated successfully! Please login with your new password.', 'success')
+            return redirect(url_for('main.login'))
+            
+    except (BadSignature, SignatureExpired) as e:
+        flash('Invalid or expired token', 'danger')
+        return redirect(url_for('main.login'))
+    
+    return render_template('reset_password.html', form=form, token=token)
+
+
+@main.route('/get-csrf-token', methods=['GET'])
+def get_csrf_token():
+    return jsonify({'csrf_token': generate_csrf()})
+
+
+
+@main.route('/profile/login_history')
+@login_required
+def login_history():
+    history = LoginHistory.query.filter_by(user_id=current_user.id).order_by(LoginHistory.login_time.desc()).all()
+    return render_template('login_history.html', history=history)
+
 
 
 @main.route('/health')

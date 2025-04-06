@@ -8,7 +8,7 @@ def wait_for_db(app, max_retries=10):
     while retry_count < max_retries:
         try:
             with app.app_context():
-                db.create_all()
+                db.engine.connect()
             return True
         except OperationalError:
             retry_count += 1

@@ -26,6 +26,7 @@
     <div class="verification-form">
         <p>Enter the 6-digit code from your authenticator app:</p>
         <form method="POST" action="{{ url_for('main.verify_2fa') }}">
+            {{ form.hidden_tag() }}
             <label for="otp">Code:</label>
             <input type="text" id="otp" name="otp" required pattern="[0-9]{6}" maxlength="6">
             <button type="submit">Verify</button>

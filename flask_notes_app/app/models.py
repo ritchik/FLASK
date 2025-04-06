@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
-import datetime
+from datetime import datetime, timezone
 import markdown
 import bleach
 from sqlalchemy.event import listens_for
@@ -9,9 +9,12 @@ from cryptography.fernet import Fernet
 import base64
 import hashlib
 from werkzeug.security import check_password_hash, generate_password_hash
- 
- 
-
+from cryptography.hazmat.primitives.asymmetric import rsa
+from cryptography.hazmat.primitives import serialization 
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import padding
+from cryptography.hazmat.primitives.serialization import load_pem_private_key
+from cryptography.hazmat.primitives.serialization import load_pem_public_key
  
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
@@ -21,7 +24,28 @@ class User(db.Model, UserMixin):
     totp_secret = db.Column(db.String(32), nullable=True)  # Store the TOTP secret
     is_2fa_verified = db.Column(db.Boolean, default=False)  # Track whether 2FA is verified
     notes = db.relationship('Note', backref='author', lazy=True)
+   
+    public_key = db.Column(db.Text, nullable=True)
+    private_key = db.Column(db.Text, nullable=True)
 
+    def generate_keys(self):
+        """Generuje parę kluczy RSA i zapisuje je w bazie"""
+        private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+        private_pem = private_key.private_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PrivateFormat.TraditionalOpenSSL,
+            encryption_algorithm=serialization.NoEncryption()
+        ).decode('utf-8')
+
+        public_pem = private_key.public_key().public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo
+        ).decode('utf-8')
+
+        self.private_key = private_pem
+        self.public_key = public_pem
+      
+        
 
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -29,7 +53,7 @@ class Note(db.Model):
     content_md = db.Column(db.Text, nullable=False)  # Markdown
     content_html = db.Column(db.Text, nullable=True)  # Wygenerowany HTML
     encrypted = db.Column(db.Boolean, default=False)
-    created_at = db.Column(db.DateTime, default=datetime.datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     signature = db.Column(db.String(512), nullable=False)
     password_hash = db.Column(db.String(256), nullable=True)  # Store hashed password for encrypted notes
@@ -74,13 +98,43 @@ class Note(db.Model):
             return True
         return SharedNote.query.filter_by(note_id=self.id, user_id=user.id).first() is not None
 
+    def sign_note(self, user):
+        """Podpisuje notatkę za pomocą klucza prywatnego użytkownika"""
+        if not user.private_key:
+         raise ValueError("Brak klucza prywatnego dla użytkownika")
 
+        private_key = load_pem_private_key(user.private_key.encode(), password=None)
+        signature = private_key.sign(
+            self.content_md.encode(),
+            padding.PSS(mgf=padding.MGF1(hashes.SHA256()), salt_length=padding.PSS.MAX_LENGTH),
+            hashes.SHA256()
+        )
+        self.signature = base64.b64encode(signature).decode('utf-8')
+    
+    def verify_signature(self, user):
+        """Weryfikuje podpis notatki za pomocą klucza publicznego użytkownika"""
+        if not user.public_key or not self.signature:
+          return False  # <-- правильный отступ
+    
+        public_key = load_pem_public_key(user.public_key.encode())  # <-- теперь внутри функции
+        try:
+            public_key.verify(
+                base64.b64decode(self.signature),
+                self.content_md.encode(),
+                padding.PSS(mgf=padding.MGF1(hashes.SHA256()), salt_length=padding.PSS.MAX_LENGTH),
+                hashes.SHA256()
+            )
+            return True  # <-- отступ исправлен
+        except Exception:
+           return False  # <-- отступ исправлен
+
+       
 
 class SharedNote(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     note_id = db.Column(db.Integer, db.ForeignKey('note.id'), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)  # Jeśli `NULL`, to publiczna
-    shared_at = db.Column(db.DateTime, default=datetime.datetime.utcnow)
+    shared_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
 
     note = db.relationship("Note", backref="shared_notes")
     user = db.relationship("User", backref="shared_notes")
@@ -90,4 +144,13 @@ class Signature(db.Model):
     note_id = db.Column(db.Integer, db.ForeignKey('note.id'), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     signature = db.Column(db.String(512), nullable=False)
-    signed_at = db.Column(db.DateTime, default=datetime.datetime.utcnow)
+    signed_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+
+
+class LoginHistory(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    ip_address = db.Column(db.String(50))
+    user_agent = db.Column(db.Text)
+    login_time = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+    location = db.Column(db.String(100))     

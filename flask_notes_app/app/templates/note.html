@@ -14,7 +14,8 @@
                 {{ content | safe }} <!-- Display decrypted content -->
             </div>
         {% else %}
-            <form method="POST">
+        <form method="POST">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                 <label for="password">Enter password to decrypt:</label>
                 <input type="password" name="password" required>
                 <button type="submit">Submit</button>

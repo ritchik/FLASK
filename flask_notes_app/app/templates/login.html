@@ -1,33 +1,153 @@
-<!-- templates/login.html -->
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    <h1>Login</h1>
+{% block title %}Login{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <style>
+        /* Core narrow container */
+        .login-container {
+            max-width: 100px !important;
+            margin: 0.7rem auto;
+            padding: 0.6rem !important;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        /* Compact title */
+        .login-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+
+        /* Ultra-compact form elements */
+        .login-container .form-group {
+            margin-bottom: 0.5rem;
+        }
+        
+        .login-container .form-control {
+            border-radius: 4px;
+            padding: 0.35rem 0.5rem !important;
+            font-size: 0.8rem;
+            height: auto;
+        }
+
+        /* Tight button */
+        .login-container .btn-primary {
+            border-radius: 4px;
+            padding: 0.4rem;
+            font-size: 0.85rem;
+            width: 100%;
+            margin-top: 0.3rem;
+        }
+
+        /* Minimal links */
+        .login-container .links {
+            margin-top: 0.6rem;
+            font-size: 0.75rem;
+        }
+        
+        .login-container .links p {
+            margin-bottom: 0.3rem;
+        }
+        
+        .login-container .links a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Compact alerts */
+        .login-container .alert {
+            padding: 0.4rem;
+            font-size: 0.75rem;
+            margin: 0.4rem 0;
+            border-radius: 3px;
+        }
+
+        /* Countdown timer */
+        .countdown {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 0.7rem;
+            margin-top: 0.3rem;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <h1 class="login-title">Login</h1>
 
     <form method="POST" action="{{ url_for('main.login') }}">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
+        {{ form.hidden_tag() }}
+
+        <!-- Honeypot Field (hidden from humans) -->
+        <div style="position: absolute; left: -9999px; top: -9999px;">
+           <label for="honeypot">Leave this empty</label>
+           <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" class="form-control" id="username" name="username" 
+                   placeholder="Username" required>
+        </div>
         
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <div class="form-group">
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" class="form-control" id="password" 
+                   name="password" placeholder="Password" required>
+        </div>
         
-        <button type="submit">Login</button>
+        <button type="submit" id="login-btn" class="btn btn-primary {% if is_button_hidden %}hidden{% endif %}">
+            Login
+        </button>
+        
+        {% if is_button_hidden %}
+        <p class="countdown text-center">Wait <span id="countdown">{{ remaining_time }}</span>s</p>
+        {% endif %}
     </form>
     
-    {% with messages = get_flashed_messages() %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-            {% for message in messages %}
-                <p style="color: red;">{{ message }}</p>
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} text-center">
+                    {{ message }}
+                </div>
             {% endfor %}
         {% endif %}
     {% endwith %}
 
-    <p>Don't have an account? <a href="{{ url_for('main.register') }}">Register</a></p>
-</body>
-</html>
+    <div class="links text-center">
+        <p><a href="{{ url_for('main.register') }}">Register</a></p>
+        <p><a href="{{ url_for('main.forgot_password') }}">Reset password</a></p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {% if is_button_hidden %}
+    <script>
+        // Compact countdown timer
+        const countdownElement = document.getElementById('countdown');
+        let timeLeft = parseInt(countdownElement.textContent);
+        
+        const countdownInterval = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('login-btn').classList.remove('hidden');
+                document.querySelector('.countdown').style.display = 'none';
+            }
+        }, 1000);
+    </script>
+    {% endif %}
+{% endblock %}

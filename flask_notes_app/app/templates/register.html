@@ -17,6 +17,10 @@
     {% endwith %}
 
     <form method="POST" action="{{ url_for('main.register') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+
+
+
         <div>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
@@ -31,6 +35,15 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
         </div>
+        
+
+         <!-- Honeypot Field (hidden from humans) -->
+         <div style="position: absolute; left: -9999px; top: -9999px;">
+            <label for="honeypot">Leave this empty</label>
+            <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+         </div>
+        
+
 
         <div>
             <label for="confirm_password">Confirm Password:</label>
@@ -38,6 +51,9 @@
         </div>
 
         <button type="submit">Register</button>
+
+
+
     </form>
     
     <p>Already have an account? <a href="{{ url_for('main.login') }}">Login here</a></p>

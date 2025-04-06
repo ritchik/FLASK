@@ -1,6 +1,10 @@
  
 
 services:
+
+
+
+
   db:
     image: postgres
     restart: always
@@ -37,7 +41,7 @@ services:
     build:
       context: ../flask_notes_app  # Corrected structure
       dockerfile: Dockerfile
-    command: gunicorn --bind 0.0.0.0:5000 --workers 3 --timeout 60 --log-level debug run:app 
+    command: sh -c "pip install --no-cache-dir -r requirements.txt && gunicorn --bind 0.0.0.0:5000 --workers 3 --timeout 120 --log-level debug run:app"
     ports:
       - "5000:5000"
     restart: always
@@ -53,6 +57,15 @@ services:
       REDIS_URL: redis://redis:6379/0
       FLASK_DEBUG: 'False'
       SECRET_KEY: 'your-secret-key-here'
+
+      # Add these email configurations:
+      MAIL_SERVER: smtp.gmail.com
+      MAIL_PORT: 587
+      MAIL_USE_TLS: "true"
+      MAIL_USERNAME: "margaritaminich166@gmail.com"
+      MAIL_PASSWORD: "ydknecbrsbqrbous"
+      MAIL_DEFAULT_SENDER: "your_email@gmail.com"
+
     networks:
       - app-network
     volumes:

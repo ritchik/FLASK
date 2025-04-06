@@ -22,6 +22,7 @@ EXPOSE 5000
 ENV PYTHONUNBUFFERED=1
 ENV FLASK_APP=run.py
 ENV PYTHONPATH=/app
+#ENV FLASK_ENV=production
 
 # Use gunicorn to run the Flask app with appropriate configuration
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "3", "--timeout", "60", "--log-level", "debug", "run:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "3", "--timeout", "60", "--log-level", "debug", "--no-server-header",  "run:app"]
