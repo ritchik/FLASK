@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, session 
+from flask import Blueprint, render_template, request, redirect, url_for, flash, session, send_file
 from app.models import Note, User, SharedNote,LoginHistory
 from flask_mail import Message,Mail
 from flask import current_app
@@ -12,9 +12,10 @@ from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.security import check_password_hash, generate_password_hash
 import hashlib 
 import pyotp
+import geoip2.database
 from flask import jsonify
 from flask_wtf.csrf import CSRFProtect, generate_csrf
-
+import io
 from flask import render_template, request, flash, redirect, url_for, session
 from flask_login import login_user, logout_user, login_required, current_user
 import time
@@ -37,6 +38,18 @@ from flask_limiter.util import get_remote_address
 
 main = Blueprint('main', __name__)
 
+
+
+def get_location_from_ip(ip_address):
+    if ip_address.startswith(('10.', '172.', '192.168.')):
+        return "Local Network"
+    
+    try:
+        with geoip2.database.Reader('GeoLite2-City.mmdb') as reader:
+            response = reader.city(ip_address)
+            return f"{response.city.name}, {response.country.name}"
+    except Exception:
+        return "Unknown"
 
 def generate_session_id():
     """Generate unique session identifier"""
@@ -150,7 +163,6 @@ def index():
 def login():
     check_honeypot(request)
     
-    # Progressive security measures
     if current_user.is_authenticated:
         return redirect(url_for('main.profile'))
     
@@ -161,11 +173,12 @@ def login():
         session['failed_attempts'] = 0
         session['_id'] = str(uuid.uuid4())  # Unique session identifier
         session['first_failed_time'] = None
+        session['lockout_phase'] = 0  # Track which phase of lockout we're in
     
-    # Progressive lockout system (5, 10, 15+ fails)
-    lockout_durations = {5: 30, 10: 300, 15: 1800}  # 30s, 5m, 30m
-    current_lockout = next((v for k,v in sorted(lockout_durations.items()) 
-                          if session['failed_attempts'] >= k), 0)
+    # Progressive lockout system (5 fails → 30s, next 5 → 40s, next 5 → 50s, next 5+ → 60s)
+    lockout_durations = [30, 40, 50, 60]  # Increasing lockout durations
+    current_phase = min(session.get('lockout_phase', 0), len(lockout_durations) - 1)
+    current_lockout = lockout_durations[current_phase] if session['failed_attempts'] >= 5 else 0
     
     # Check if in lockout period
     if current_lockout > 0:
@@ -178,7 +191,7 @@ def login():
                                 is_locked=True,
                                 remaining_time=int(remaining))
         else:
-            # Lockout period expired
+            # Lockout period expired - reset attempts but keep phase
             session['failed_attempts'] = 0
 
     # Add progressive delay for failed attempts (1s per failed attempt, max 5s)
@@ -191,9 +204,10 @@ def login():
         
         if user:
             if PasswordManager.verify_password(user.password_hash, form.password.data):
-                # Successful login
+                # Successful login - reset all security counters
                 session.pop('failed_attempts', None)
                 session.pop('lock_time', None)
+                session.pop('lockout_phase', None)
                 login_user(user)
                 
                 # Log login history
@@ -202,14 +216,13 @@ def login():
                         user_id=user.id,
                         ip_address=request.remote_addr,
                         user_agent=request.headers.get('User-Agent'),
-                        location=get_location(request.remote_addr)  # Implement this
+                        location=get_location(request.remote_addr)
                     )
                     db.session.add(login_history)
                     db.session.commit()
                     
-                    # Check for suspicious login
-                    if detect_suspicious_login(user.id, request):  # Implement this
-                        send_security_alert(user)  # Implement this
+                    if detect_suspicious_login(user.id, request):
+                        send_security_alert(user)
                         flash('Security alert: Unusual login detected', 'warning')
                 
                 except Exception as e:
@@ -223,10 +236,14 @@ def login():
                 if session['failed_attempts'] == 1:
                     session['first_failed_time'] = time.time()
                 
-                # Check if we should lock
-                if session['failed_attempts'] in lockout_durations:
+                # Check if we've reached a multiple of 5 failed attempts
+                if session['failed_attempts'] % 5 == 0:
+                    session['lockout_phase'] = min(
+                        session.get('lockout_phase', 0) + 1,
+                        len(lockout_durations) - 1
+                    )
                     session['lock_time'] = time.time()
-                    current_lockout = lockout_durations[session['failed_attempts']]
+                    current_lockout = lockout_durations[session['lockout_phase']]
                     flash(f'Account temporarily locked for {current_lockout} seconds', 'danger')
                 
                 flash('Invalid credentials', 'danger')
@@ -239,7 +256,6 @@ def login():
                          form=form, 
                          is_locked=False,
                          remaining_time=0)
- 
 @main.route('/profile')
 @login_required
 def profile():
@@ -505,10 +521,12 @@ def add_note():
  
     if request.method == "POST":
         try:
+            
+
             # Get data directly from request.form (no Flask-WTF form)
             title = request.form.get("title")
-            content = request.form.get("content")
-            is_public = request.form.get("is_public") == "on"  # Checkbox handling
+            content = request.form.get("content_md")
+            is_public = request.form.get("is_public") == "true"  # Checkbox handling
             password = request.form.get("password")
 
             new_note = Note(
@@ -579,7 +597,7 @@ def verify_2fa():
         if totp.verify(otp):
             current_user.is_2fa_verified = True
             db.session.commit()
-            flash("2FA verification successful!", "success")
+            
             return redirect(url_for('main.profile'))
         else:
             flash("Invalid OTP code. Please try again.", "error")
@@ -742,20 +760,41 @@ def reset_password(token):
         form = ResetPasswordForm()
         
         if form.validate_on_submit():
-            # DEBUG: Print new password before hashing
-            print(f"New password received: {form.password.data}")
+            password = form.password.data
+            confirm_password = form.confirm_password.data
             
-            # Use your existing PasswordManager to hash
-            hashed_password = PasswordManager.hash_password(form.password.data)
-            print(f"Hashed password: {hashed_password}")
+            # Verify passwords match
+            if password != confirm_password:
+                flash('Hasła nie są identyczne', 'error')
+                return render_template('reset_password.html', form=form, token=token)
             
-            # Update user password
+            # Verify password strength (same as registration)
+            password_strength = PasswordManager.validate_password_strength(
+                password, user.username, user.email
+            )
+            
+            if not password_strength['is_strong']:
+                # Detailed password weakness messages
+                weakness_messages = {
+                    'min_length': 'Hasło musi mieć min. 12 znaków',
+                    'has_uppercase': 'Wymagana wielka litera',
+                    'has_lowercase': 'Wymagana mała litera',
+                    'has_digit': 'Wymagana cyfra',
+                    'has_special_char': 'Wymagany znak specjalny'
+                }
+                
+                weakness_hints = [
+                    msg for check, msg in weakness_messages.items() 
+                    if not password_strength['additional_checks'][check]
+                ]
+
+                flash(f"Słabe hasło. {' '.join(weakness_hints)}", 'warning')
+                return render_template('reset_password.html', form=form, token=token)
+            
+            # Hash and save the password
+            hashed_password = PasswordManager.hash_password(password)
             user.password_hash = hashed_password
             db.session.commit()
-            
-            # Verify the update
-            updated_user = User.query.get(user.id)
-            print(f"Stored hash after update: {updated_user.password_hash}")
             
             flash('Password updated successfully! Please login with your new password.', 'success')
             return redirect(url_for('main.login'))
@@ -780,6 +819,41 @@ def login_history():
     return render_template('login_history.html', history=history)
 
 
+@main.route("/note/<int:note_id>/download-signature")
+@login_required
+def download_signature(note_id):
+    note = Note.query.get_or_404(note_id)
+    
+    # Sprawdzenie czy użytkownik ma dostęp do notatki
+    if not note.is_accessible_by(current_user):
+        abort(403)
+
+    signature_data = f"--- PODPIS NOTATKI ---\nAutor: {note.author.username}\nID Notatki: {note.id}\nPodpis (base64):\n{note.signature}"
+    return send_file(
+        io.BytesIO(signature_data.encode("utf-8")),
+        mimetype="text/plain",
+        as_attachment=True,
+        download_name=f"signature_note_{note.id}.txt"
+    )
+
+@main.route("/user/<int:user_id>/download-public-key")
+@login_required
+def download_public_key(user_id):
+    user = User.query.get_or_404(user_id)
+
+    # Możesz ograniczyć, żeby tylko autor mógł pobrać swój klucz, albo każdy mógł widzieć
+    if user != current_user and not any(note.author_id == user.id for note in current_user.notes):
+        abort(403)
+
+    if not user.public_key:
+        return "Użytkownik nie ma jeszcze klucza publicznego", 404
+
+    return send_file(
+        io.BytesIO(user.public_key.encode("utf-8")),
+        mimetype="text/plain",
+        as_attachment=True,
+        download_name=f"{user.username}_public_key.pem"
+    )
 
 @main.route('/health')
 def health_check():

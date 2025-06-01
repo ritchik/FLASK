@@ -1,142 +1,176 @@
-{% extends "base.html" %}
-
-{% block title %}Login{% endblock %}
-
-{% block styles %}
-    {{ super() }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <style>
-        /* Core narrow container */
-        .login-container {
-            max-width: 100px !important;
-            margin: 0.7rem auto;
-            padding: 0.6rem !important;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(0, 0, 0, 0.05);
+        .lockout-message {
+            background-color: #ffecec;
+            border: 1px solid #f5aca6;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
-
-        /* Compact title */
-        .login-title {
-            font-weight: 600;
-            color: #333;
-            font-size: 1.25rem;
-            margin-bottom: 0.8rem;
+        
+        .countdown-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .countdown-timer {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d9534f;
+            margin: 0 10px;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #d9534f;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .flash-message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        
+        .flash-error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .links {
+            margin-top: 20px;
             text-align: center;
         }
-
-        /* Ultra-compact form elements */
-        .login-container .form-group {
-            margin-bottom: 0.5rem;
-        }
         
-        .login-container .form-control {
-            border-radius: 4px;
-            padding: 0.35rem 0.5rem !important;
-            font-size: 0.8rem;
-            height: auto;
-        }
-
-        /* Tight button */
-        .login-container .btn-primary {
-            border-radius: 4px;
-            padding: 0.4rem;
-            font-size: 0.85rem;
-            width: 100%;
-            margin-top: 0.3rem;
-        }
-
-        /* Minimal links */
-        .login-container .links {
-            margin-top: 0.6rem;
-            font-size: 0.75rem;
-        }
-        
-        .login-container .links p {
-            margin-bottom: 0.3rem;
-        }
-        
-        .login-container .links a {
+        .links a {
+            margin: 0 10px;
+            color: #007bff;
             text-decoration: none;
-            font-weight: 500;
-        }
-
-        /* Compact alerts */
-        .login-container .alert {
-            padding: 0.4rem;
-            font-size: 0.75rem;
-            margin: 0.4rem 0;
-            border-radius: 3px;
-        }
-
-        /* Countdown timer */
-        .countdown {
-            color: #dc3545;
-            font-weight: bold;
-            font-size: 0.7rem;
-            margin-top: 0.3rem;
         }
     </style>
-{% endblock %}
+</head>
+<body>
+    <div class="login-form">
+        <h1 style="text-align: center;">Login</h1>
 
-{% block content %}
-<div class="login-container">
-    <h1 class="login-title">Login</h1>
-
-    <form method="POST" action="{{ url_for('main.login') }}">
-        {{ form.hidden_tag() }}
-
-        <!-- Honeypot Field (hidden from humans) -->
-        <div style="position: absolute; left: -9999px; top: -9999px;">
-           <label for="honeypot">Leave this empty</label>
-           <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+        {% if is_locked %}
+        <div class="lockout-message">
+            <p>Too many failed attempts. Please wait:</p>
+            <div class="countdown-container">
+                <div class="spinner"></div>
+                <div class="countdown-timer" id="countdown">{{ remaining_time }}</div>
+                <span>seconds</span>
+            </div>
+            <p style="margin-top: 10px; font-size: 0.9em;">You'll be able to try again automatically</p>
         </div>
-
-        <div class="form-group">
-            <label for="username" class="sr-only">Username</label>
-            <input type="text" class="form-control" id="username" name="username" 
-                   placeholder="Username" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="password" class="sr-only">Password</label>
-            <input type="password" class="form-control" id="password" 
-                   name="password" placeholder="Password" required>
-        </div>
-        
-        <button type="submit" id="login-btn" class="btn btn-primary {% if is_button_hidden %}hidden{% endif %}">
-            Login
-        </button>
-        
-        {% if is_button_hidden %}
-        <p class="countdown text-center">Wait <span id="countdown">{{ remaining_time }}</span>s</p>
         {% endif %}
-    </form>
-    
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="alert alert-{{ category }} text-center">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
 
-    <div class="links text-center">
-        <p><a href="{{ url_for('main.register') }}">Register</a></p>
-        <p><a href="{{ url_for('main.forgot_password') }}">Reset password</a></p>
+        <form method="POST" action="{{ url_for('main.login') }}">
+            {{ form.hidden_tag() }}
+
+            <!-- Honeypot Field (hidden from humans) -->
+            <div style="position: absolute; left: -9999px; top: -9999px;">
+               <label for="honeypot">Leave this empty</label>
+               <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            
+            <button type="submit" id="login-btn" {% if is_locked %}disabled{% endif %}>
+                Login
+            </button>
+        </form>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash-message flash-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="links">
+            <a href="{{ url_for('main.register') }}">Register</a>
+            <a href="{{ url_for('main.forgot_password') }}">Reset password</a>
+        </div>
     </div>
-</div>
-{% endblock %}
 
-{% block scripts %}
-    {{ super() }}
-    {% if is_button_hidden %}
+    {% if is_locked %}
     <script>
-        // Compact countdown timer
+        // Enhanced countdown timer with auto-refresh
         const countdownElement = document.getElementById('countdown');
         let timeLeft = parseInt(countdownElement.textContent);
+        const loginBtn = document.getElementById('login-btn');
         
         const countdownInterval = setInterval(() => {
             timeLeft--;
@@ -144,10 +178,20 @@
             
             if (timeLeft <= 0) {
                 clearInterval(countdownInterval);
-                document.getElementById('login-btn').classList.remove('hidden');
-                document.querySelector('.countdown').style.display = 'none';
+                // Enable the button and refresh the page
+                loginBtn.disabled = false;
+                // Auto-refresh the page to get a fresh form
+                window.location.reload();
             }
         }, 1000);
+        
+        // Disable form submission while locked out
+        document.querySelector('form').addEventListener('submit', function(e) {
+            if (timeLeft > 0) {
+                e.preventDefault();
+            }
+        });
     </script>
     {% endif %}
-{% endblock %}
+</body>
+</html>

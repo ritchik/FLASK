@@ -1894,3 +1894,332 @@
 2025/04/02 15:07:02 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:27
 2025/04/02 15:07:02 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:28
 2025/04/02 15:07:02 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:29
+2025/04/06 14:59:08 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:09 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:09 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:10 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:11 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:13 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:17 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:24 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 14:59:37 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 15:00:03 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 15:00:54 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 15:01:55 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:01:55 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:01:55 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:01:55 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:31
+2025/04/06 15:01:55 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:32
+2025/04/06 15:02:59 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:02:59 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:02:59 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:02:59 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:31
+2025/04/06 15:02:59 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:32
+2025/04/06 15:06:43 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:06:44 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:06:44 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:06:45 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:06:46 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:06:48 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:06:52 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:06:59 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:07:12 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:22
+2025/04/06 15:30:04 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:05 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:05 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:06 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:07 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:09 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:13 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:20 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:33 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:28
+2025/04/06 15:30:59 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:30:59 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:30:59 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:30:59 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:31
+2025/04/06 15:30:59 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:32
+2025/04/06 15:31:53 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:31:53 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:31:53 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:31:53 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:31
+2025/04/06 15:31:53 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:32
+2025/04/06 15:33:32 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:33:32 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:33:32 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:30
+2025/04/06 15:33:32 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:31
+2025/04/06 15:33:32 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:32
+2025/04/06 15:50:38 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:50:39 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:50:40 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:50:41 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:50:42 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:50:44 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:50:48 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:50:54 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/06 15:51:08 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 15:51:33 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 15:52:27 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 15:52:27 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 15:52:27 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 15:52:27 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:32
+2025/04/06 15:52:27 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:33
+2025/04/06 16:01:40 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:01:41 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:01:42 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:01:43 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:01:44 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:01:46 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:01:49 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:01:56 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:02:09 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:02:35 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:03:27 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:26
+2025/04/06 16:04:27 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:05:28 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 16:05:28 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 16:05:28 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 16:05:28 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:32
+2025/04/06 16:05:28 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:33
+2025/04/06 16:39:57 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 16:39:57 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 16:39:57 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:31
+2025/04/06 16:39:57 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:32
+2025/04/06 16:39:57 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:33
+2025/04/06 16:50:08 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:08 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:09 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:10 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:11 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:13 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:17 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:24 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:50:37 [emerg] 1#1: unknown directive "more_clear_headers" in /etc/nginx/nginx.conf:25
+2025/04/06 16:51:03 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:03 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:03 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:03 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/06 16:51:03 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/06 16:51:50 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:50 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:50 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:50 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/06 16:51:50 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/06 16:51:55 [warn] 30#30: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:55 [warn] 30#30: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:55 [warn] 30#30: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/06 16:51:55 [warn] 30#30: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/06 16:51:55 [warn] 30#30: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/06 16:51:55 [notice] 30#30: signal process started
+2025/04/13 02:21:03 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:21:03 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:21:03 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:21:03 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 02:21:03 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 02:30:40 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:30:40 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:30:40 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:30:40 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 02:30:40 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 02:36:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:36:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:36:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:36:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 02:36:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 02:57:14 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:57:14 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:57:14 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 02:57:14 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 02:57:14 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 13:37:17 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:37:17 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:37:17 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:37:17 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 13:37:17 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 13:37:30 [error] 29#29: *5 upstream prematurely closed connection while reading response header from upstream, client: 172.21.0.1, server: _, request: "POST /add HTTP/1.1", upstream: "http://172.21.0.4:5000/add", host: "localhost", referrer: "https://localhost/profile"
+2025/04/13 13:39:55 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:39:55 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:39:55 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:39:55 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 13:39:55 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 13:44:23 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:44:23 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:44:23 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:44:23 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 13:44:23 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 13:45:24 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:45:24 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:45:24 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 13:45:24 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 13:45:24 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 14:03:09 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:03:09 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:03:09 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:03:09 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 14:03:09 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 14:17:48 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:17:48 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:17:48 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:17:48 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 14:17:48 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 14:26:44 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:26:44 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:26:44 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:26:44 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 14:26:44 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 14:32:21 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:32:21 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:32:21 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:32:21 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 14:32:21 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 14:35:16 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:35:16 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:35:16 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:35:16 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 14:35:16 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 14:47:14 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:47:14 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:47:14 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:47:14 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 14:47:14 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 14:47:46 [error] 29#29: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.30.0.1, server: _, request: "GET /profile HTTP/1.1", upstream: "http://172.30.0.4:5000/profile", host: "localhost", referrer: "https://localhost/profile"
+2025/04/13 14:49:52 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:49:52 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:49:52 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:26
+2025/04/13 14:49:52 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:27
+2025/04/13 14:49:52 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:28
+2025/04/13 20:20:48 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:20:49 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:20:49 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:20:50 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:20:51 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:20:53 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:20:57 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:21:04 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:21:17 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:21:43 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:22:35 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:23:36 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:24:36 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/13 20:25:37 [warn] 1#1: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:28
+2025/04/13 20:25:37 [warn] 1#1: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:28
+2025/04/13 20:25:37 [warn] 1#1: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/nginx.conf:28
+2025/04/13 20:25:37 [warn] 1#1: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/nginx.conf:29
+2025/04/13 20:25:37 [warn] 1#1: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/nginx.conf:30
+2025/04/14 01:24:47 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:24:48 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:24:48 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:24:49 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:24:51 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:24:53 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:24:56 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:25:03 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:25:16 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:25:42 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:26:34 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:27:34 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:28:35 [emerg] 1#1: unknown directive "more_set_headers" in /etc/nginx/nginx.conf:15
+2025/04/14 01:32:32 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:32:33 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:32:34 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:32:35 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:32:36 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:32:38 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:32:42 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:32:48 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:33:02 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:33:28 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:34:19 [emerg] 1#1: module "/usr/lib/nginx/modules/ngx_http_headers_more_filter_module.so" version 1024000 instead of 1025005 in /etc/nginx/nginx.conf:2
+2025/04/14 01:41:51 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:41:51 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:41:52 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:41:53 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:41:54 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:41:56 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:42:00 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:42:07 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:42:20 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:42:46 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:43:38 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:46:51 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:47:52 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:48:52 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:49:53 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:50:53 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:51:53 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:52:53 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:53:54 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:54:54 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:55:54 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:56:55 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:57:55 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:58:55 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 01:59:56 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:00:56 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:01:56 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:02:57 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:03:57 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:04:57 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:05:58 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:06:58 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:07:58 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:08:59 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:09:59 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:10:59 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:11:59 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:13:00 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:14:00 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:15:00 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:16:01 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:17:01 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:18:01 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:19:02 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:20:02 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:21:02 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:22:03 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 02:23:03 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 08:16:09 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 08:17:09 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/14 10:24:32 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:51:46 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:51:46 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:51:47 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:51:48 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:51:49 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:51:51 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:51:55 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:52:01 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:07 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:08 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:09 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:10 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:11 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:13 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:17 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:23 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:53:36 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:54:02 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:54:54 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:55:54 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:56:55 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:57:55 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:58:56 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 02:59:56 [emerg] 1#1: cannot load certificate "/etc/ssl/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:41 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:42 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:43 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:44 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:45 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:47 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:50 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:04:57 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:05:10 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:05:37 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:06:28 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:07:29 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:08:30 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:09:30 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/15 03:10:30 [emerg] 1#1: cannot load certificate "/etc/certs/nginx-selfsigned.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/certs/nginx-selfsigned.crt, r) error:10000080:BIO routines::no such file)
+2025/04/17 11:54:41 [error] 30#30: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.27.0.1, server: _, request: "GET /profile HTTP/1.1", upstream: "http://172.27.0.4:5000/profile", host: "localhost", referrer: "https://localhost/note/13"
+2025/04/17 11:56:28 [error] 30#30: *3 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.28.0.1, server: _, request: "GET /profile HTTP/1.1", upstream: "http://172.28.0.4:5000/profile", host: "localhost", referrer: "https://localhost/note/13"
+2025/04/17 12:04:14 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.29.0.1, server: _, request: "GET /profile HTTP/1.1", upstream: "http://172.29.0.4:5000/profile", host: "localhost", referrer: "https://localhost/note/13"
+2025/04/17 12:35:00 [error] 30#30: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: _, request: "GET /note/13 HTTP/1.1", upstream: "http://192.168.32.4:5000/note/13", host: "localhost", referrer: "https://localhost/profile"

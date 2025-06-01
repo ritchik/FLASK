@@ -1,10 +1,4 @@
- 
-
 services:
-
-
-
-
   db:
     image: postgres
     restart: always
@@ -39,7 +33,7 @@ services:
 
   flask_notes_app:
     build:
-      context: ../flask_notes_app  # Corrected structure
+      context: ../flask_notes_app
       dockerfile: Dockerfile
     command: sh -c "pip install --no-cache-dir -r requirements.txt && gunicorn --bind 0.0.0.0:5000 --workers 3 --timeout 120 --log-level debug run:app"
     ports:
@@ -57,15 +51,12 @@ services:
       REDIS_URL: redis://redis:6379/0
       FLASK_DEBUG: 'False'
       SECRET_KEY: 'your-secret-key-here'
-
-      # Add these email configurations:
       MAIL_SERVER: smtp.gmail.com
       MAIL_PORT: 587
       MAIL_USE_TLS: "true"
       MAIL_USERNAME: "margaritaminich166@gmail.com"
       MAIL_PASSWORD: "ydknecbrsbqrbous"
       MAIL_DEFAULT_SENDER: "your_email@gmail.com"
-
     networks:
       - app-network
     volumes:
@@ -78,8 +69,10 @@ services:
       start_period: 10s
 
   nginx:
-    image: nginx:latest
-    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
@@ -87,9 +80,9 @@ services:
       flask_notes_app:
         condition: service_started
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./certs:/etc/ssl/certs:ro
-      - ./logs/nginx:/var/log/nginx
+     - ./nginx.conf:/etc/nginx/nginx.conf:ro
+     - ./certs:/etc/nginx/certs:ro
+     - ./logs/nginx:/var/log/nginx
     networks:
       - app-network
 
