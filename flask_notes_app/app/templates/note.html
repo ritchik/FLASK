@@ -99,11 +99,9 @@
         <h1>{{ note.title }}</h1>
         {% if content %}
             <div class="note">
-                {{ content | safe }} <!-- Display decrypted content -->
+                {{ content | safe }}  
             </div>
-     <!--        <a href="{{ url_for('main.download_signature', note_id=note.id) }}" class="btn btn-outline-primary btn-sm">📥 Pobierz podpis</a>
-                 <a href="{{ url_for('main.download_public_key', user_id=note.author.id) }}" class="btn btn-outline-secondary btn-sm">📥 Klucz publiczny autora</a>
-                  -->
+      
     {% else %}
         <form method="POST">
             <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
@@ -112,19 +110,18 @@
                 <button type="submit">Submit</button>
             </form>
             {% if password_attempted and not content %}
-                <p style="color: red;">Incorrect password. Please try again.</p>  <!-- Error message if wrong password -->
+                <p style="color: red;">Incorrect password. Please try again.</p>   
             {% endif %}
         {% endif %}
     {% else %}
         <h1>{{ note.title }}</h1>
         <div class="note">
-            {{ note.content_html | safe }}  <!-- Display the normal, unencrypted content -->
+            {{ note.content_html | safe }}   
             
         </div>
-     <!--   <a href="{{ url_for('main.download_signature', note_id=note.id) }}" class="btn btn-outline-primary btn-sm">📥 Pobierz podpis</a>
-            <a href="{{ url_for('main.download_public_key', user_id=note.author.id) }}" class="btn btn-outline-secondary btn-sm">📥 Klucz publiczny autora</a>  -->
+     
     {% endif %}
     
-    <a href="{{ url_for('main.profile') }}">Powrót do profilu</a> <!-- Link to return to the note list -->
+    <a href="{{ url_for('main.profile') }}">Powrót do profilu</a>  
 </body>
 </html>

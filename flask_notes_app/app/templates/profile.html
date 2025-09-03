@@ -193,6 +193,7 @@
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
+            align-items: center;
         }
         
         .note-actions form {
@@ -209,12 +210,18 @@
             gap: 10px;
             align-items: center;
             flex-grow: 1;
+            max-width: 400px;
         }
         
-        .note-actions .share-form input {
+        .note-actions .share-form select {
             flex-grow: 1;
             max-width: 200px;
             padding: 8px 12px;
+            margin: 0;
+        }
+        
+        .note-actions .share-form button {
+            white-space: nowrap;
         }
         
         .encrypted-tag {
@@ -254,6 +261,12 @@
             background-color: rgba(0, 184, 148, 0.1);
             color: var(--success);
             border-left: 4px solid var(--success);
+        }
+        
+        .flash-info {
+            background-color: rgba(9, 132, 227, 0.1);
+            color: var(--info);
+            border-left: 4px solid var(--info);
         }
         
         .profile-links {
@@ -298,7 +311,7 @@
             margin-bottom: 10px;
         }
         
-        /* Responsive adjustments */
+         
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -315,13 +328,15 @@
             .note-actions {
                 flex-direction: column;
                 gap: 8px;
+                align-items: stretch;
             }
             
             .note-actions .share-form {
                 width: 100%;
+                max-width: none;
             }
             
-            .note-actions .share-form input {
+            .note-actions .share-form select {
                 max-width: none;
             }
             
@@ -334,7 +349,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Flash messages -->
+        
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -350,7 +365,7 @@
             <p>Email: {{ user.email if user.email else "No email provided" }}</p>
         </div>
         
-        <!-- Add new note form -->
+        
         <div class="section">
             <h2>Add New Note</h2>
             <form action="{{ url_for('main.add_note') }}" method="POST">
@@ -383,7 +398,7 @@
             </form>
         </div>
 
-        <!-- Private Notes Section -->
+         
         <div class="section">
             <h2>Your Private Notes</h2>
             {% if private_notes %}
@@ -403,12 +418,20 @@
                                     </button>
                                 </form>
                                 
-                                <form method="POST" action="{{ url_for('main.share_note', note_id=note.id) }}">
+                                 
+                                <form method="POST" action="{{ url_for('main.share_note', note_id=note.id) }}" class="share-form">
                                     <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
-                                    <div class="share-form">
-                                        <input type="text" name="username" placeholder="Username" required>
-                                        <button type="submit">Share</button>
-                                    </div>
+                                    
+                                    <select name="user_id" required>
+                                        <option value="">Share with</option>
+                                        {% for user in other_users %}
+                                            <option value="{{ user.id }}">{{ user.username }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    
+                                    <button type="submit">Share</button>
+                                    
+                                     
                                     <div style="position: absolute; left: -9999px; top: -9999px;">
                                         <label for="honeypot">Leave this empty</label>
                                         <input type="text" id="honeypot-{{ note.id }}" name="honeypot" tabindex="-1" autocomplete="off">
@@ -423,7 +446,7 @@
             {% endif %}
         </div>
 
-        <!-- Public Notes Section -->
+        
         <div class="section">
             <h2>Your Public Notes</h2>
             {% if public_notes %}
@@ -448,7 +471,7 @@
             {% endif %}
         </div>
 
-        <!-- Shared With You Section -->
+         
         <div class="section">
             <h2>Notes Shared With You</h2>
             {% if shared_notes %}
@@ -465,7 +488,7 @@
             {% endif %}
         </div>
 
-        <!-- Public Notes from Others Section -->
+         
         <div class="section">
             <h2>Public Notes from Others</h2>
             {% if other_public_notes %}

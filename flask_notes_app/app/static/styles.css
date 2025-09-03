@@ -1,11 +1,11 @@
-/* Resetowanie domyślnych stylów przeglądarki */
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ogólne style dla ciała strony */
+ 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -13,13 +13,13 @@ body {
     padding: 20px;
 }
 
-/* Nagłówek strony */
+ 
 h1, h2 {
     color: #333;
     font-family: 'Arial', sans-serif;
 }
 
-/* Style dla listy notatek */
+ 
 ul {
     list-style-type: none;
     padding: 0;
@@ -38,7 +38,7 @@ li {
     color: #555;
 }
 
-/* Linki */
+ 
 a {
     text-decoration: none;
     color: #007bff;
@@ -48,7 +48,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Formularz */
+ 
 form {
     background-color: #fff;
     padding: 20px;
@@ -78,7 +78,7 @@ button:hover {
     background-color: #218838;
 }
 
-/* Styl dla pojedynczej notatki */
+ 
 .note {
     background-color: #fff;
     padding: 20px;
@@ -96,7 +96,7 @@ button:hover {
     color: #333;
 }
 
-/* Styl dla przycisków akcji */
+ 
 button.delete {
     background-color: #dc3545;
     color: #fff;

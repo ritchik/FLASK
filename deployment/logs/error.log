@@ -1,0 +1,2 @@
+2025/04/06 18:43:48 [emerg] 28548#2096: CreateFile() "C:\Users\marga\stud\FLASK\deployment/conf/nginx.conf" failed (3: The system cannot find the path specified)
+2025/04/06 18:48:05 [emerg] 34676#17428: CreateFile() "C:/etc/nginx/mime.types" failed (3: The system cannot find the path specified) in C:/Users/marga/stud/FLASK/deployment/nginx.conf:10

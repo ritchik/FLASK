@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
+        /* --- TWOJE STYLE --- */
         .lockout-message {
             background-color: #ffecec;
             border: 1px solid #f5aca6;
@@ -16,20 +17,17 @@
             justify-content: center;
             flex-direction: column;
         }
-        
         .countdown-container {
             display: flex;
             align-items: center;
             margin-top: 10px;
         }
-        
         .countdown-timer {
             font-size: 24px;
             font-weight: bold;
             color: #d9534f;
             margin: 0 10px;
         }
-        
         .spinner {
             border: 3px solid #f3f3f3;
             border-top: 3px solid #d9534f;
@@ -38,12 +36,10 @@
             height: 20px;
             animation: spin 1s linear infinite;
         }
-        
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
         .login-form {
             max-width: 400px;
             margin: 0 auto;
@@ -52,17 +48,14 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        
         .form-group {
             margin-bottom: 15px;
         }
-        
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
         }
-        
         input[type="text"],
         input[type="password"] {
             width: 100%;
@@ -70,7 +63,6 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        
         button {
             background-color: #4CAF50;
             color: white;
@@ -80,28 +72,23 @@
             cursor: pointer;
             width: 100%;
         }
-        
         button:hover {
             background-color: #45a049;
         }
-        
         .flash-message {
             padding: 10px;
             margin: 10px 0;
             border-radius: 4px;
         }
-        
         .flash-error {
             background-color: #f8d7da;
             color: #721c24;
             border: 1px solid #f5c6cb;
         }
-        
         .links {
             margin-top: 20px;
             text-align: center;
         }
-        
         .links a {
             margin: 0 10px;
             color: #007bff;
@@ -118,7 +105,7 @@
             <p>Too many failed attempts. Please wait:</p>
             <div class="countdown-container">
                 <div class="spinner"></div>
-                <div class="countdown-timer" id="countdown">{{ remaining_time }}</div>
+                <div class="countdown-timer" id="countdown" data-lock="{{ lock_end_timestamp }}"></div>
                 <span>seconds</span>
             </div>
             <p style="margin-top: 10px; font-size: 0.9em;">You'll be able to try again automatically</p>
@@ -128,7 +115,6 @@
         <form method="POST" action="{{ url_for('main.login') }}">
             {{ form.hidden_tag() }}
 
-            <!-- Honeypot Field (hidden from humans) -->
             <div style="position: absolute; left: -9999px; top: -9999px;">
                <label for="honeypot">Leave this empty</label>
                <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
@@ -148,7 +134,7 @@
                 Login
             </button>
         </form>
-        
+
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -165,33 +151,6 @@
         </div>
     </div>
 
-    {% if is_locked %}
-    <script>
-        // Enhanced countdown timer with auto-refresh
-        const countdownElement = document.getElementById('countdown');
-        let timeLeft = parseInt(countdownElement.textContent);
-        const loginBtn = document.getElementById('login-btn');
-        
-        const countdownInterval = setInterval(() => {
-            timeLeft--;
-            countdownElement.textContent = timeLeft;
-            
-            if (timeLeft <= 0) {
-                clearInterval(countdownInterval);
-                // Enable the button and refresh the page
-                loginBtn.disabled = false;
-                // Auto-refresh the page to get a fresh form
-                window.location.reload();
-            }
-        }, 1000);
-        
-        // Disable form submission while locked out
-        document.querySelector('form').addEventListener('submit', function(e) {
-            if (timeLeft > 0) {
-                e.preventDefault();
-            }
-        });
-    </script>
-    {% endif %}
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
 </body>
 </html>

@@ -21,8 +21,8 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password_hash = db.Column(db.String(256), nullable=False)
-    totp_secret = db.Column(db.String(32), nullable=True)  # Store the TOTP secret
-    is_2fa_verified = db.Column(db.Boolean, default=False)  # Track whether 2FA is verified
+    totp_secret = db.Column(db.String(32), nullable=True)   
+    is_2fa_verified = db.Column(db.Boolean, default=False)   
     notes = db.relationship('Note', backref='author', lazy=True)
    
     public_key = db.Column(db.Text, nullable=True)
@@ -50,13 +50,13 @@ class User(db.Model, UserMixin):
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(255), nullable=False)
-    content_md = db.Column(db.Text, nullable=False)  # Markdown
-    content_html = db.Column(db.Text, nullable=True)  # Wygenerowany HTML
+    content_md = db.Column(db.Text, nullable=False)   
+    content_html = db.Column(db.Text, nullable=True)  
     encrypted = db.Column(db.Boolean, default=False)
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     signature = db.Column(db.String(512), nullable=False)
-    password_hash = db.Column(db.String(256), nullable=True)  # Store hashed password for encrypted notes
+    password_hash = db.Column(db.String(256), nullable=True)   
     is_public = db.Column(db.Boolean, default=False)
 
     def render_markdown(self):
@@ -71,26 +71,26 @@ class Note(db.Model):
     
     def encrypt_content(self, password):
         """Encrypt the content using the provided password."""
-        key = base64.urlsafe_b64encode(hashlib.sha256(password.encode()).digest())  # Key derived from password
+        key = base64.urlsafe_b64encode(hashlib.sha256(password.encode()).digest())  
         fernet = Fernet(key)
         encrypted_content = fernet.encrypt(self.content_md.encode())
         self.content_md = encrypted_content.decode('utf-8')
         self.encrypted = True
-        self.password_hash = generate_password_hash(password)  # Store the hashed password for later verification
+        self.password_hash = generate_password_hash(password)   
 
     def decrypt_content(self, password):
         """Decrypt the content if the password is correct."""
         if not self.encrypted:
-            return self.content_md  # Return unencrypted content if not encrypted
+            return self.content_md   
         
-        key = base64.urlsafe_b64encode(hashlib.sha256(password.encode()).digest())  # Key derived from password
+        key = base64.urlsafe_b64encode(hashlib.sha256(password.encode()).digest())  
         fernet = Fernet(key)
         
         try:
             decrypted_content = fernet.decrypt(self.content_md.encode()).decode('utf-8')
             return decrypted_content
         except Exception as e:
-            return None  # Return None if decryption fails (incorrect password)
+            return None   
         
     def is_accessible_by(self, user):
         """Sprawdza, czy użytkownik ma dostęp do tej notatki"""
@@ -114,9 +114,9 @@ class Note(db.Model):
     def verify_signature(self, user):
         """Weryfikuje podpis notatki za pomocą klucza publicznego użytkownika"""
         if not user.public_key or not self.signature:
-          return False  # <-- правильный отступ
+            return False   
     
-        public_key = load_pem_public_key(user.public_key.encode())  # <-- теперь внутри функции
+        public_key = load_pem_public_key(user.public_key.encode())   
         try:
             public_key.verify(
                 base64.b64decode(self.signature),
@@ -124,16 +124,16 @@ class Note(db.Model):
                 padding.PSS(mgf=padding.MGF1(hashes.SHA256()), salt_length=padding.PSS.MAX_LENGTH),
                 hashes.SHA256()
             )
-            return True  # <-- отступ исправлен
+            return True   
         except Exception:
-           return False  # <-- отступ исправлен
+           return False   
 
        
 
 class SharedNote(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     note_id = db.Column(db.Integer, db.ForeignKey('note.id'), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)  # Jeśli `NULL`, to publiczna
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)   
     shared_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
 
     note = db.relationship("Note", backref="shared_notes")
